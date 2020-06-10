@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+
+<!-- CSS Stylesheets with Relative Paths -->
+
+<html lang="en-us">
+<head>
+  <meta charset="UTF-8">
+  <title>CSS Stylesheets with Relative Paths</title>
+
+  <!-- This line is money! It points your HTML to the CSS file. -->
+  <!-- Notice the "relative" pathway? It matches a file inside our current directory's "assets" folder. Open it to see our style rules. -->
+  <link rel="stylesheet" type="text/css" href="style.css">
+<style>
+.container{
+  background-color: black;
+  text-align: center;
+}
+  body{
+    background-color: #efeee7;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color:#333333;
+    margin: 0;
+    text-align: left;
+   
+  }
+  header{
+    color:#333333;
+  }
+  h1{
+    color:#eee;
+    font-size: 28px;
+    background-color:black;
+    margin: 0;
+  }
+  h2{
+    font-size: 24px;
+
+  }
+  #contact-info{
+    float: right;
+    position: relative;
+    right: 85px;
+    top: 50px;
+  }
+  #bio-image{
+    float: left;
+    padding-right: .6em;
+    padding-bottom: .6em;
+    width: 200px;
+  }
+  #main-bio{
+    float: left;
+    position: absolute;
+    padding-top: 6em;
+    right: 30%;
+    left: 30%;
+  }
+  #figure {
+    position: relative;
+  }
+  #bio-name{
+    position: absolute;
+    top: 190px;
+    font-size: 15px;
+  }
+  a{
+    color: #d21034;
+  }
+
+</style>
+
+</head>
+
+<body>
+  <div class="container">
+  <header>
+    <h1>Student Bio</h1>
+  </header>
+</div>
+  
+  <main>
+
+    <section id="main-bio">
+      <section id="figure">
+        <h2 id="bio-name">Jessica Esmeralda Murillo</h2>
+        <img id="bio-image" src="https://media-exp1.licdn.com/dms/image/C4D03AQGH2MkTv7S8cg/profile-displayphoto-shrink_200_200/0?e=1597276800&v=beta&t=WUs0fHJ0qDe0KL05bLzPsGnHmc1mW5oBgfWfpGJ0x4I" alt="Jessica Murillo">
+      </section>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tincidunt ultricies felis eget tincidunt. 
+        Phasellus lobortis pulvinar nibh, at interdum lectus vestibulum commodo. Morbi turpis nisl, ultrices quis metus non, eleifend sollicitudin nulla.
+         Mauris pretium vitae nunc a accumsan. Vivamus ultricies enim eros, ac lacinia nulla aliquam pretium. 
+         Fusce est lectus, varius vitae sem non, vestibulum condimentum quam. Integer iaculis nisl ac egestas feugiat.
+
+        Morbi commodo diam enim, non tincidunt sapien convallis rutrum. In lectus erat, finibus id tortor nec, finibus venenatis elit. 
+        Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. 
+        Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nam tincidunt vulputate ligula, ut iaculis tortor. 
+        Maecenas et libero facilisis, aliquam neque sed, tincidunt urna. Aenean lobortis nulla ut porta elementum. Ut in neque ut quam auctor laoreet ac vel mi. 
+        Nullam vel metus eu ex suscipit egestas sit amet ut lorem. Praesent rutrum pellentesque ex id venenatis. 
+        Nulla sodales aliquam felis, sit amet blandit massa varius eget. Pellentesque non maximus augue. 
+        Pellentesque placerat, nunc ac facilisis consectetur, orci nibh feugiat felis, id vehicula diam lectus nec felis.
+        Aenean a volutpat tortor, a ullamcorper elit. Donec sed nisi sed diam varius maximus.</a></p>
+    </section>
+
+    <aside id="contact-info">
+      <h2>Contact Info</h2>
+      <ul>
+        <li><strong>Email:</strong> <a href="mailto:murillojessica12@gmail.com">murillojessica12@gmail.com</a></li>
+        <li><strong>Github:</strong> <a href="https://github.com/jmurillo-13">jmurillo-13</a></li>
+        <li><strong>Portfolio:</strong> <a href="#">coming soon</a></li>
+      </ul>
+    </aside>
+  </main>
+
+</body>
+
+</html>
